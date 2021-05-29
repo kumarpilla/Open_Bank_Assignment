@@ -1,0 +1,51 @@
+.advertisement-card {
+    // border: 2px solid;
+    border-radius: 20px;
+    max-height: 250px;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    .image-holder {
+      height: 110px;
+      width: 100%;
+      .img {
+        max-width: 90px;
+        padding: 20px 0 0 20px;
+      }
+    }
+    .content-heading {
+      height: 50px;
+      padding: 15px 0 0 20px;
+      font-size: 15px;
+      color: #333333;
+    }
+    .content-description {
+      height: 50px;
+      padding: 10px 0 0 20px;
+      margin-bottom: 15px;
+      max-width: 80%;
+      font-size: 15px;
+      color: #999999;
+      word-break: break-word;
+      line-height: 22px;
+    }
+    &:hover {
+      background-color: #663399;
+      cursor: pointer;
+      .content-heading {
+        height: 50px;
+        padding: 15px 0 0 20px;
+        font-size: 15px;
+        color: white;
+      }
+      .content-description {
+        max-height: 70px;
+        padding: 10px 0 0 20px;
+        margin-bottom: 15px;
+        max-width: 80%;
+        font-size: 15px;
+        color: white;
+        word-break: break-word;
+        line-height: 22px;
+      }
+    }
+  }

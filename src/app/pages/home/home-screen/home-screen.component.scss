@@ -1,0 +1,167 @@
+::ng-deep .mat-accent .mat-slider-thumb {
+  background-color: #492072;
+}
+::ng-deep .mat-accent .mat-slider-thumb-label {
+  background-color: #492072;
+}
+::ng-deep .mat-accent .mat-slider-track-fill {
+  background-color: rgb(73, 32, 114);
+}
+
+::ng-deep .mat-slider.mat-slider-horizontal .mat-slider-track-wrapper {
+  height: 12px;
+  border-radius: 5px 0 0 5px;
+}
+
+.slider-field {
+  padding: 10px 0 0 50px;
+  margin-top: 40px;
+}
+.example-margin {
+  width: 80%;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.size-25 {
+  font-size: 25px;
+}
+
+.size-20 {
+  font-size: 20px;
+}
+
+.select-repayement-tenure {
+  font-size: 20px;
+  width: 80%;
+  margin-left: 50px;
+}
+
+::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+  background-color: #492072;
+}
+
+::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+  background-color: #492072;
+}
+
+.h2 {
+  font-weight: 300;
+}
+
+.get-money-btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 24px;
+  margin-top: 20px;
+  color: #663399;
+  background-color: white;
+  filter: drop-shadow(0 0 5px #00000033);
+  &:hover {
+    color: white;
+    border: #663399;
+    background: #641faa;
+  }
+}
+
+.get-open-acc-btn {
+  font-size: 18px;
+  width: 279px;
+  height: 58px;
+  border-radius: 24px;
+  margin-top: 20px;
+  color: #663399;
+  background-color:transparent;
+  filter: drop-shadow(0 0 5px #00000033);
+  &:hover {
+    color: white;
+    border: #663399;
+    background: #641faa;
+  }
+}
+
+.hand-shake {
+  height: 280px;
+  width: 500px;
+  margin: 100px 20px 0 149px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.add-card {
+  display: grid;
+  max-height: 700px;
+  align-content: space-evenly;
+  margin-top: 110px;
+}
+.open-account {
+  margin-top: 400px;
+  display: grid;
+  max-height: 250px;
+  width: 400px;
+}
+
+.advertisement-card {
+  // border: 2px solid;
+  border-radius: 20px;
+  max-height: 250px;
+  max-width: 400px;
+  background-color: #f9f9f9;
+  .image-holder {
+    height: 110px;
+    width: 100%;
+    .img {
+      max-width: 90px;
+      padding: 20px 0 0 20px;
+    }
+  }
+  .content-heading {
+    height: 50px;
+    padding: 15px 0 0 20px;
+    font-size: 15px;
+    color: #333333;
+  }
+  .content-description {
+    height: 50px;
+    padding: 10px 0 0 20px;
+    margin-bottom: 15px;
+    max-width: 80%;
+    font-size: 15px;
+    color: #999999;
+    word-break: break-word;
+    line-height: 22px;
+  }
+  &:hover {
+    background-color: #663399;
+    cursor: pointer;
+    .content-heading {
+      height: 50px;
+      padding: 15px 0 0 20px;
+      font-size: 15px;
+      color: white;
+    }
+    .content-description {
+      max-height: 70px;
+      padding: 10px 0 0 20px;
+      margin-bottom: 15px;
+      max-width: 80%;
+      font-size: 15px;
+      color: white;
+      word-break: break-word;
+      line-height: 22px;
+    }
+  }
+}
+
+.acc-description{
+  font-size: 18px;
+  max-width: 350px;
+  color: #777777;
+}
+
+.acc-heading{
+  font-size: 40px;
+    max-width: 396px;
+    color: black;
+    line-height: 40px;
+}

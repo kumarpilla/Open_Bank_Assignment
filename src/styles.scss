@@ -1,0 +1,205 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+// @import 'node_modules/bootstrap/scss/grid'
+
+.home {
+    display: flex;
+    width: 100%;
+    min-height: 960px;
+    .left-box {
+        height: 100%;
+        width: 40%;
+        color: #663399;
+    }
+    .right-box {
+        color: black;
+        width: 100%;
+        .eligibility-box {
+            min-height: 964px;
+
+            background: url("./assets/images/circle.svg") 0% 0% no-repeat padding-box;
+        }
+    }
+}
+
+.eligibility-criteria {
+    margin-top: 270px;
+    border-radius: 24px;
+    border: 2px black;
+    margin-left: 145px;
+    width: 75%;
+    min-height: 675px;
+}
+
+.eligibility-input-box {
+    width: 60%;
+    min-height: 674px;
+    border-radius: 20px;
+    background-color: white;
+    /* margin-top: 10px; */
+    margin-left: 20px;
+    .eligibility-heading {
+        min-height: 60px;
+        background-color: #f8f5fa;
+        margin-top: 10p;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+    }
+}
+
+.get-loan-box {
+    height: 500px;
+    width: 30%;
+    border-radius: 0 20px 20px 0;
+    margin-top: 100px;
+    background-color: #521094;
+    font-weight: 300;
+    color: white;
+    .grid-container {
+        margin-top: 120px;
+        margin-left: 50px;
+        display: grid;
+        height: 250px;
+    }
+}
+
+.heading-text {
+    height: 60px;
+    background-color: #dee2e6;
+    margin-top: 10p;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    color: black;
+    font-size: 25px;
+    padding: 20px 0 0 140px;
+}
+.super-slim-text {
+    margin-top: 270px;
+    margin-left: 189px;
+    font-size: 40px;
+    color: #222222;
+    min-height: 98px;
+    min-width: 350px;
+    line-height: 50px;
+}
+
+.left-card {
+    height: 600px;
+    width: 100%;
+    background: url("./assets/images/blob-small.svg") 0% 0% no-repeat padding-box;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    .login-button {
+        margin: 55px;
+        border: #663399 2px solid;
+        color: #663399;
+        background-color: transparent;
+        box-sizing: 24px 24px 24px 24px;
+        border-radius: 24px;
+        min-height: 45px;
+        min-width: 118px;
+        filter: drop-shadow(0px 0px 20px #00000033);
+    }
+    .get-started-btn {
+        min-height: 45px;
+        min-width: 165px;
+        border-radius: 24px;
+        border: #663399 2px solid;
+        filter: drop-shadow(0 0 5px #00000033);
+        background: transparent linear-gradient(90deg, #9f62c9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+        &:hover {
+            min-height: 45px;
+            min-width: 165px;
+            border-radius: 24px;
+            border: #663399;
+            background: #641faa;
+        }
+    }
+    .header-middle {
+        text-align: left;
+        font: normal normal normal 25px/34px Open Sans;
+        letter-spacing: 0px;
+        color: #222222;
+        opacity: 1;
+        margin: 55px;
+        cursor: pointer;
+        &:hover {
+            color: #663399;
+        }
+    }
+}
+.justify-content-space-around {
+    justify-content: space-around;
+}
+.login-button {
+    margin: 55px;
+    border: #663399 2px solid;
+    color: #663399;
+    background-color: transparent;
+    box-sizing: 24px 24px 24px 24px;
+    border-radius: 24px;
+    min-height: 45px;
+    min-width: 118px;
+    filter: drop-shadow(0px 0px 20px #00000033);
+}
+
+.get-started-btn {
+    min-height: 45px;
+    min-width: 165px;
+    border-radius: 24px;
+    border: #663399 2px solid;
+    filter: drop-shadow(0 0 5px #00000033);
+    background: transparent linear-gradient(90deg, #9f62c9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+    &:hover {
+        min-height: 45px;
+        min-width: 165px;
+        border-radius: 24px;
+        border: #663399;
+        background: #641faa;
+    }
+}
+
+.header-middle {
+    text-align: left;
+    font: normal normal normal 25px/34px Open Sans;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+    margin: 55px;
+    cursor: pointer;
+    &:hover {
+        color: #663399;
+    }
+}
+
+.mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+    background-color: #5305a0;
+    height: 7px;
+}
+
+.second-section {
+    margin-top: 100px;
+    min-height: 1000px;
+    width: 100%;
+    display: flex;
+    background: url("./assets/images/sol_wave_bg.svg") 0% 0% no-repeat padding-box;
+    justify-content: space-around;
+}
+
+.mat-tool-bar {
+    justify-content: space-evenly;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+}

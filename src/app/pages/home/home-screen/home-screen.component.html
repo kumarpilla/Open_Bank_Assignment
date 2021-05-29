@@ -1,0 +1,159 @@
+<div class="container" style="height:12px; width: 100%"></div>
+<div class="home">
+    <div class="left-box">
+        <div class="super-slim-text">
+            We make it Super Slim
+        </div>
+        <div class="left-card">
+            <mat-card>
+                <img mat-card-image [src]="'./../../../../assets/images/collect_img-video.png'" class="hand-shake">
+            </mat-card>
+            <img src="./../../../../assets/images/accounting_dots.svg" alt="" style="float: right;">
+        </div>
+        <div>
+        </div>
+    </div>
+    <div class="right-box">
+        <div class="eligibility-box">
+            <div class="eligibility-criteria">
+                <div class="d-flex">
+                    <div class="eligibility-input-box">
+                        <div class="heading-text">
+                            <div >
+                                    Eligibility Calculator
+                            </div>
+
+                        </div>
+                        <div class="row slider-field">
+                            <h2 class="size-25">Monthly Income</h2>
+                            <div class="size-20">
+                                {{value | currency: 'INR': 'symbol': '1.0-0'}}
+                            </div>
+                            <mat-slider class="example-margin" [(ngModel)]="value" [max]="300000" [min]="100000"
+                                [step]="1000" [tickInterval]="1000" aria-labelledby="example-name-label"></mat-slider>
+                            <div class="d-flex" style="justify-content: space-between;
+                            width: 90%;">
+                                <div>
+                                    R 1,00,000
+                                </div>
+                                <div>
+                                    R 3,00,000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row slider-field">
+                            <h2 class="size-25">Monthly Expenses</h2>
+                            <div class="size-20">
+                                {{monthlyExpenses | currency: 'INR': 'symbol': '1.0-0'}}
+                            </div>
+                            <mat-slider class="example-margin" [(ngModel)]="monthlyExpenses" [max]="100000"
+                                [min]="10000" [step]="500" aria-labelledby="example-name-label">
+                            </mat-slider>
+                        </div>
+
+                        <div class="row">
+                            <mat-form-field class="select-repayement-tenure">
+                                <mat-label style="font-size: 20px;">Repayment Tenure</mat-label>
+                                <mat-select name="month" value="6">
+                                    <mat-option value="3">3 Months</mat-option>
+                                    <mat-option value="6">6 Months</mat-option>
+                                    <mat-option value="9">9 Months</mat-option>
+                                    <mat-option value="12">12 Months</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="d-flex" style="font-size: 20px;">
+                            <p style="margin-left:50px;"> Do You have any existing Loans?</p>
+                            <div style="align-items: center;justify-content: center; padding-left: 50px;">
+                                <mat-slide-toggle></mat-slide-toggle>
+                            </div>
+                        </div>
+                        <div style="font-size: 20px; margin-left: 50px;margin-top: 15px;">
+                            <mat-form-field class="invert-color">
+                                <mat-label>Exising Loan Emi</mat-label>
+                                <input matInput name="sample" list="occupation" placeholder="" value="R 15,000"
+                                    required>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="get-loan-box">
+                        <div class="grid-container">
+                            <div>
+                                <h2 style="font-weight: 300;">
+                                    Your Loan Amount
+                                </h2>
+                                {{'100000' | currency: 'INR'}}
+                            </div>
+                            <div>
+                                <h2 style="font-weight: 300;">
+                                    Your Emi Will be
+                                </h2>
+                                {{'15000' | currency: 'INR'}}
+                            </div>
+                            <div>
+                                <button class="get-money-btn">GET MONEY</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div style="float: right;">
+    <img src="./../../../../assets/images/accounting_dots.svg">
+</div>
+
+<div class="second-section">
+    <div style="display: grid">
+        <app-advertisement-card class="advertisement-card" 
+                                [ImgUrl]="'../../../../assets/images/Get Paid Instantly.png'"
+                                [contentHeader]="'Quick cash disbursement'"
+                                [contentDescription]="'Get terms loans that your business needs within 72hrs'"
+        >
+        </app-advertisement-card>
+        <app-advertisement-card class="advertisement-card" 
+                                [ImgUrl]="'../../../../assets/images/Low interest rate.png'"
+                                [contentHeader]="'Low-interest Rate'"
+                                [contentDescription]="'Achieve your financials goals with an amazing interest rate starting at 13% per annum'"
+        >
+        </app-advertisement-card>
+        <app-advertisement-card class="advertisement-card" 
+                                [ImgUrl]="'../../../../assets/images/Secure Payments@2x.png'"
+                                [contentHeader]="' Zero Paperwork'"
+                                [contentDescription]="'Get started instantly by submitting only your basic details & bank statement'"
+        >
+        </app-advertisement-card>
+    </div>
+    <div class="add-card">
+        <app-advertisement-card class="advertisement-card" 
+                                [ImgUrl]="'../../../../assets/images/freelancer_feature_icon_6@1.5x.png'"
+                                [contentHeader]="'Ace your business finance'"
+                                [contentDescription]="'Manage banking, accounting & everything in between, on one place'"
+        >
+        </app-advertisement-card>
+
+        <app-advertisement-card class="advertisement-card" 
+                                [ImgUrl]="'../../../../assets/images/Covid.png'"
+                                [contentHeader]="'Loans to fight COVID-19'"
+                                [contentDescription]="'Zero-EMI on first three months Back-to-Business loans of upto 1 lakh'"
+        >
+        </app-advertisement-card>
+
+    </div>
+    <div class="open-account">
+        <div class="acc-heading">
+            Boost your business with open
+        </div>
+        <div  class="acc-description">
+            Get your hands on term loans that crafted for your business
+        </div>
+        <div>
+            <button class="get-open-acc-btn">GET an Open Account</button>
+
+        </div>
+    </div>
+</div>
